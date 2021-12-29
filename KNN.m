@@ -33,6 +33,7 @@ Y = species;
 gscatter(X(:,2),X(:,4),Y)
 
 % Çapraz katlama yöntemi ile eğitim-test ayırma
+% Burada sadece 1-kat test ve eğitim ayrımı uygulanıyor.
 cv = cvpartition(size(X,1),'KFold',5); % %20-%80 test-eğitim ayır
 idx = cv.training(1); % Her kat için ayrı hesap yapackasan; buradaki 1'i, k'ya kadar döngüye sok.
 XTrain = X(idx,:); XTest  = X(~idx,:);
