@@ -1,9 +1,12 @@
 %% KNN Uygulaması
-% KNN uygulaması yapılarak iris veri setinde sınıflandırma yapılıyor. Veri
-% setini görselleştirirken iki boyutlu düzlemde gösterebilmek için sadece 2
-% ve 4. sütunlara göre verilerin dağılımını gösteriyoruz. Bu sütunların
-% veriyi en iyi temsil eden sütunlar olduğunu burada belirtilmeyen
-% yöntemlerle (fscmrmr gibi) öğrenebiliyoruz.
+% KNN uygulaması yapılarak iris veri setinde sınıflandırma yapılıyor.
+% 
+% ÖNEMLİ: Eğer çok boyutlu veri ile 2-boyutlu düzlemde görselleştirme
+% yapmak istenirse ya PCA gibi bir yöntem ile boyut indirgeme yapmak lazım
+% ya da MRMR gibi bir yöntem ile önemli olan 2 sütunu seçmek lazım. İris'te
+% 2 ve 4 numaralı sütunların veriyi temsil etme konusunda değerli olduğunu
+% FSCMRMR ile başka uygulamada öğrendiğim için burada doğrudan onları
+% seçtim.
 
 % Model fit edildikten sonra modele test verilerini gönderip doğruluk
 % hesabı yapıyoruz. Son olarak modele 1 tane örnek veri gönderip buna
